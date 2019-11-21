@@ -3,9 +3,10 @@ import { useQuery } from '@apollo/react-hooks';
 import { gql } from 'apollo-boost';
 import { NavLink } from 'react-router-dom';
 
-const GET_USER_PROFILE = gql`
+export const GET_USER_PROFILE = gql`
   query GetUserProfile {
     user {
+      __typename
       name
       picture
       bio
@@ -13,6 +14,12 @@ const GET_USER_PROFILE = gql`
       jobtitle
       gender
       industry
+      profile {
+        value
+        type 
+        privacy
+        preferredContact
+      }
     }
   }
 `;
