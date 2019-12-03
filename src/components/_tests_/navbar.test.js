@@ -8,10 +8,10 @@ describe('Navbar', () => {
   afterEach(cleanup);
 
   it('renders without error', () => {
-    render(<span>
+    render(
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/profile">Profile</NavLink>
-        <NavLink to="/users">Users</NavLink>
-      </span>);
-  });
-});
+        //<NavLink to="/profile">Profile</NavLink>
+        //<NavLink to="/users">Users</NavLink>)
+      )}
+)}
+)
