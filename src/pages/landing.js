@@ -52,13 +52,13 @@ const Landing = () => {
       <div className="text-center container mx-auto px-20">
         <h2 className="text-6xl font-bold mb-2 text-black">Go Scan Go</h2>
         <h3 className="text-3xl mb-8 text-black-200">
-          Smarter lists that calculate how much its items cost. And, to the penny.
+         A Smarter contact and conference managment that makes the conference experience more amusing.
         </h3>
         <a href="https://www.espn.com/college-football/stats/player/_/view/offense/stat/rushing/season/2019/table/rushing/sort/rushingYards/dir/desc">
           <button className="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
             Download
           </button>
-			<button class="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
+			<button className="bg-green font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
             Get Started
           </button>
         </a>
@@ -112,8 +112,31 @@ const Landing = () => {
         </div>
       </div>
 
-
-{/* About Us */}
+		  {/*About Us*/}
+        <section className="container mx-auto px-6 p-10">
+          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">About Swaap</h2>
+			<h3 className="text-3xl mb-8 text-black-200">
+        We help conference organizers and attendees track, analyze and improve their conference experience
+        </h3>
+			<h2 className="text-4xl font-bold text-left text-gray-800 mb-8">Our Story</h2>
+          <div className="flex items-center flex-wrap mb-20">
+            <div className="w-full md:w-1/2">
+              
+              <p className="text-gray-600 mb-8">
+                Swaap launched in January 2020, and today thousands of people use Swaap to manage thousands of conferences, meet-ups, hackathon, and more. 
+              </p>
+              <h2 className="text-4xl font-bold text-right text-gray-800 mb-8">Our Passion</h2>
+              <p class="text-gray-600 mb-8">
+                We're passionate about making it easy to manage your conference experience and improving yur networking so you can spend more time focusing on events. 
+              </p>
+              <h4 className="text-3xl text-gray-800 font-bold mb-3">Christmas or Birthday Lists</h4>
+              <p className="text-gray-600 mb-8">
+                Manage everyone's wants, and keep tabs on how much each person's gifts cost.
+              </p>
+            </div>
+          </div>
+	</section>
+{/* Team list */}
       <div>
         <section className="container mx-auto px-6 p-10">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">The Heist Pullers</h2>
