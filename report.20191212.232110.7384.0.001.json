@@ -1,0 +1,403 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20191212.232110.7384.0.001.json",
+    "dumpEventTime": "2019-12-12T23:21:13Z",
+    "dumpEventTimeStamp": "1576214473346",
+    "processId": 7384,
+    "cwd": "D:\\Git\\conference-contacts-fe",
+    "commandLine": [
+      "C:\\Program Files\\node.exe",
+      "C:/Program Files/node_modules/npm/bin/npm-cli.js",
+      "install"
+    ],
+    "nodejsVersion": "v12.13.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.13.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.1/node-v12.13.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.1/node-v12.13.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.13.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.17763",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Celeron(R) CPU  N3060  @ 1.60GHz",
+        "speed": 1600,
+        "user": 2486609,
+        "nice": 0,
+        "sys": 1185515,
+        "idle": 4366281,
+        "irq": 148125
+      },
+      {
+        "model": "Intel(R) Celeron(R) CPU  N3060  @ 1.60GHz",
+        "speed": 1600,
+        "user": 2553859,
+        "nice": 0,
+        "sys": 974109,
+        "idle": 4509875,
+        "irq": 63468
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "0c:96:e6:21:92:1b",
+        "address": "2600:1005:b149:1808:5581:d003:cfe5:19b9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "0c:96:e6:21:92:1b",
+        "address": "2600:1005:b149:1808:b060:c736:e60f:e1c",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "0c:96:e6:21:92:1b",
+        "address": "fe80::5581:d003:cfe5:19b9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 13
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "0c:96:e6:21:92:1b",
+        "address": "192.168.1.12",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "LAPTOP-P854P9JO"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff792211729",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792215b4c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792214b08",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff79230369b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792b082de",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792af0321",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7929bdbec",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7929c5cf1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7929bb353",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7929b9b24",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff7929dadf5",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792746e19",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792f3404d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00007ff792f4935b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000000379cadad58",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 77000704,
+    "totalCommittedMemory": 77000704,
+    "usedMemory": 66528432,
+    "availableMemory": 2082405664,
+    "memoryLimit": 2148532224,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047488,
+        "used": 1047472,
+        "available": 16
+      },
+      "old_space": {
+        "memorySize": 69840896,
+        "committedMemory": 69840896,
+        "capacity": 69715504,
+        "used": 61547112,
+        "available": 8168392
+      },
+      "code_space": {
+        "memorySize": 1474560,
+        "committedMemory": 1474560,
+        "capacity": 1221696,
+        "used": 913440,
+        "available": 308256
+      },
+      "map_space": {
+        "memorySize": 3149824,
+        "committedMemory": 3149824,
+        "capacity": 2938976,
+        "used": 1818560,
+        "available": 1120416
+      },
+      "large_object_space": {
+        "memorySize": 1175552,
+        "committedMemory": 1175552,
+        "capacity": 1165904,
+        "used": 1165904,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3648,
+        "used": 3648,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 94.968,
+    "kernelCpuSeconds": 38.25,
+    "cpuConsumptionPercent": 4.84429,
+    "maxRss": 129310720,
+    "pageFaults": {
+      "IORequired": 334767,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 1185,
+      "writes": 2727
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "ACLOCAL_PATH": "D:\\Git\\mingw64\\share\\aclocal;D:\\Git\\usr\\share\\aclocal",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\TekkenKing789\\AppData\\Roaming",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "COLORTERM": "truecolor",
+    "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-P854P9JO",
+    "COMSPEC": "C:\\windows\\system32\\cmd.exe",
+    "CONFIG_SITE": "D:/Git/mingw64/etc/config.site",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "DISPLAY": "needs-to-be-defined",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "EXEPATH": "D:\\Git\\bin",
+    "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+    "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+    "GOOGLE_DEFAULT_CLIENT_ID": "no",
+    "GOOGLE_DEFAULT_CLIENT_SECRET": "no",
+    "HOME": "C:\\Users\\TekkenKing789",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\TekkenKing789",
+    "HOSTNAME": "LAPTOP-P854P9JO",
+    "INFOPATH": "D:\\Git\\usr\\local\\info;D:\\Git\\usr\\share\\info;D:\\Git\\usr\\info;D:\\Git\\share\\info",
+    "LANG": "en_US.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\TekkenKing789\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-P854P9JO",
+    "MANPATH": "D:\\Git\\mingw64\\local\\man;D:\\Git\\mingw64\\share\\man;D:\\Git\\usr\\local\\man;D:\\Git\\usr\\share\\man;D:\\Git\\usr\\man;D:\\Git\\share\\man",
+    "MINGW_CHOST": "x86_64-w64-mingw32",
+    "MINGW_PACKAGE_PREFIX": "mingw-w64-x86_64",
+    "MINGW_PREFIX": "D:/Git/mingw64",
+    "MSYSTEM": "MINGW64",
+    "MSYSTEM_CARCH": "x86_64",
+    "MSYSTEM_CHOST": "x86_64-w64-mingw32",
+    "MSYSTEM_PREFIX": "D:/Git/mingw64",
+    "NUMBER_OF_PROCESSORS": "2",
+    "OLDPWD": "D:/Git/",
+    "ORIGINAL_PATH": "D:\\Git\\mingw64\\bin;D:\\Git\\usr\\bin;C:\\Users\\TekkenKing789\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0;C:\\windows\\System32\\OpenSSH;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files;C:\\Users\\TekkenKing789\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Microsoft VS Code\\bin;C:\\Users\\TekkenKing789\\AppData\\Local\\Yarn\\bin;C:\\Users\\TekkenKing789\\AppData\\Roaming\\npm",
+    "ORIGINAL_TEMP": "C:/Users/TEKKEN~1/AppData/Local/Temp",
+    "ORIGINAL_TMP": "C:/Users/TEKKEN~1/AppData/Local/Temp",
+    "OS": "Windows_NT",
+    "OneDrive": "C:\\Users\\TekkenKing789\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\TekkenKing789\\OneDrive",
+    "OnlineServices": "Online Services",
+    "PATH": "D:\\Git\\mingw64\\bin;D:\\Git\\usr\\bin;C:\\Users\\TekkenKing789\\bin;C:\\Users\\TekkenKing789\\bin;D:\\Git\\mingw64\\bin;D:\\Git\\usr\\local\\bin;D:\\Git\\usr\\bin;D:\\Git\\usr\\bin;D:\\Git\\mingw64\\bin;D:\\Git\\usr\\bin;C:\\Users\\TekkenKing789\\bin;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0;C:\\windows\\System32\\OpenSSH;C:\\Program Files (x86)\\Yarn\\bin;C:\\Program Files;C:\\Users\\TekkenKing789\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Microsoft VS Code\\bin;C:\\Users\\TekkenKing789\\AppData\\Local\\Yarn\\bin;C:\\Users\\TekkenKing789\\AppData\\Roaming\\npm;D:\\Git\\usr\\bin\\vendor_perl;D:\\Git\\usr\\bin\\core_perl",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+    "PKG_CONFIG_PATH": "D:\\Git\\mingw64\\lib\\pkgconfig;D:\\Git\\mingw64\\share\\pkgconfig",
+    "PLINK_PROTOCOL": "ssh",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 76 Stepping 4, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "4c04",
+    "PROGRAMFILES": "C:\\Program Files",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\windows\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "PWD": "D:/Git/conference-contacts-fe",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "RegionCode": "NA",
+    "SESSIONNAME": "Console",
+    "SHELL": "D:\\Git\\usr\\bin\\bash.exe",
+    "SHLVL": "4",
+    "SSH_ASKPASS": "D:/Git/mingw64/libexec/git-core/git-gui--askpass",
+    "SYSTEMDRIVE": "C:",
+    "SYSTEMROOT": "C:\\windows",
+    "TEMP": "C:\\Users\\TEKKEN~1\\AppData\\Local\\Temp",
+    "TERM": "xterm",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.41.0",
+    "TMP": "C:\\Users\\TEKKEN~1\\AppData\\Local\\Temp",
+    "TMPDIR": "C:\\Users\\TEKKEN~1\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-P854P9JO",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-P854P9JO",
+    "USERNAME": "TekkenKing789",
+    "USERPROFILE": "C:\\Users\\TekkenKing789",
+    "WINDIR": "C:\\windows",
+    "_": "C:/Program Files/node.exe",
+    "platformcode": "KV"
+  },
+  "sharedObjects": [
+    "C:\\Program Files\\node.exe",
+    "C:\\windows\\SYSTEM32\\ntdll.dll",
+    "C:\\windows\\System32\\KERNEL32.DLL",
+    "C:\\windows\\System32\\KERNELBASE.dll",
+    "C:\\windows\\System32\\WS2_32.dll",
+    "C:\\windows\\System32\\RPCRT4.dll",
+    "C:\\windows\\System32\\ADVAPI32.dll",
+    "C:\\windows\\System32\\msvcrt.dll",
+    "C:\\windows\\System32\\sechost.dll",
+    "C:\\windows\\System32\\USER32.dll",
+    "C:\\windows\\System32\\win32u.dll",
+    "C:\\windows\\System32\\GDI32.dll",
+    "C:\\windows\\System32\\gdi32full.dll",
+    "C:\\windows\\System32\\msvcp_win.dll",
+    "C:\\windows\\System32\\ucrtbase.dll",
+    "C:\\windows\\System32\\PSAPI.DLL",
+    "C:\\windows\\System32\\CRYPT32.dll",
+    "C:\\windows\\System32\\MSASN1.dll",
+    "C:\\windows\\System32\\bcrypt.dll",
+    "C:\\windows\\SYSTEM32\\dbghelp.dll",
+    "C:\\windows\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\windows\\SYSTEM32\\USERENV.dll",
+    "C:\\windows\\System32\\profapi.dll",
+    "C:\\windows\\SYSTEM32\\WINMM.dll",
+    "C:\\windows\\SYSTEM32\\WINMMBASE.dll",
+    "C:\\windows\\System32\\cfgmgr32.dll",
+    "C:\\windows\\System32\\IMM32.DLL",
+    "C:\\windows\\System32\\powrprof.dll",
+    "C:\\windows\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\windows\\System32\\bcryptPrimitives.dll",
+    "C:\\windows\\system32\\uxtheme.dll",
+    "C:\\windows\\System32\\combase.dll",
+    "C:\\windows\\system32\\mswsock.dll",
+    "C:\\windows\\System32\\kernel.appcore.dll",
+    "C:\\windows\\System32\\NSI.dll",
+    "C:\\windows\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\windows\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\windows\\SYSTEM32\\DNSAPI.dll",
+    "C:\\windows\\system32\\napinsp.dll",
+    "C:\\windows\\system32\\pnrpnsp.dll",
+    "C:\\windows\\System32\\winrnr.dll",
+    "C:\\windows\\system32\\NLAapi.dll",
+    "C:\\windows\\system32\\wshbth.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\windows\\System32\\fwpuclnt.dll"
+  ]
+}

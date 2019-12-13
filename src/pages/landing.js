@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useAuth0 } from '../react-auth0-spa';
-// import Button from '../components/button';
-// import NavBar from '../containers/navbar'
-//const Landing = () => {
-  //const { loginWithRedirect } = useAuth0();
-	export default function Landing() {
+import Button from '../components/button';
+import { Link } from '@reach/router';
+
+export default function Landing() {
   const { loginWithRedirect } = useAuth0();
   const [open, setOpen] = useState(false);
+
   return (
     <div>
       <section>
@@ -44,44 +44,36 @@ import { useAuth0 } from '../react-auth0-spa';
 
             <div className="flex">
               <ul className="desktop-nav flex items-center">
-                <button onClick={loginWithRedirect}>Sign Up</button>
+                <Button onClick={loginWithRedirect}>Sign Up</Button>
               </ul>
             </div>
           </div>
         </nav>
       </section>
 
-{/* Title */}
+      {/* Title */}
       <div className="text-center container mx-auto px-20">
-        <h2 className="text-6xl font-bold mb-2 text-black">Go Scan Go</h2>
+        <h2 className="text-6xl font-bold mb-2 text-black">Meet Spend Stack</h2>
         <h3 className="text-3xl mb-8 text-black-200">
          A Smarter contact and conference managment that makes the conference experience more amusing.
         </h3>
-        <a href="https://www.espn.com/college-football/stats/player/_/view/offense/stat/rushing/season/2019/table/rushing/sort/rushingYards/dir/desc">
-          <button className="bg-white font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
-            Download
-          </button>
-			<button className="bg-green font-bold rounded-full mt-6 py-4 px-8 shadow-lg uppercase tracking-wider">
-            Get Started
-          </button>
-        </a>
+        <Button onClick={loginWithRedirect}>Download</Button>
+        <img src="https://i.ibb.co/NLCGt1Z/darkMode.png" alt="darkMode" border="0"></img>
       </div>
 
-
-
-{/* Features */}
+      {/* Features */}
       <div>
-        <section className="container mx-auto px-6 p-10">
+        <section className="container mx-auto px-6 p-10" id="features">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">Features</h2>
           <div className="flex items-center flex-wrap mb-20">
             <div className="w-full md:w-1/2">
-              <h4 className="text-3xl text-gray-800 font-bold mb-3">Conference updates</h4>
+              <h4 className="text-3xl text-gray-800 font-bold mb-3">A grocery List</h4>
               <p className="text-gray-600 mb-8">
-                See up-to-date news on what is going on at any participation conferences
+                Check off items and easily keep tabs on the cost of your next grocery trip
               </p>
-              <h4 class="text-3xl text-gray-800 font-bold mb-3">QR Scans</h4>
-              <p class="text-gray-600 mb-8">
-                Scan QR codes from any users to receive contacts and references
+              <h4 className="text-3xl text-gray-800 font-bold mb-3">The "envelope" Budget</h4>
+              <p className="text-gray-600 mb-8">
+                Keep track of your budget and enter items throughout the week.
               </p>
               <h4 className="text-3xl text-gray-800 font-bold mb-3">Christmas or Birthday Lists</h4>
               <p className="text-gray-600 mb-8">
@@ -92,28 +84,87 @@ import { useAuth0 } from '../react-auth0-spa';
         </section>
       </div>
 
-{/* DarkMode needs to be reviewed */}
-      <div className="flex-start bg-gray-200 p-5">
-        <div className="w-2/5 flex-none p-2"></div>
-        <div className="w-full md:w-1/2 pl-10">
-          <h4 className="text-gray-700 text-center bg-gray-400 p-2 w-2/5 flex-none p-2">Dark Mode</h4>
-          <p className="text-center text-center text-gray-600 mb-8 w-2/5 flex-none p-2 ">
-            Turn out the lights with our gorgeous dark mode support
-          </p>
-          <h4 className="text-gray-700 text-center bg-gray-400 p-2 w-2/5 flex-none p-2">Dark Mode</h4>
-          <p className="text-center text-gray-600 mb-8 w-2/5 flex-none p-2">
-            Turn out the lights with our gorgeous dark mode support
-          </p>
-          <h4 className="text-gray-700 text-center bg-gray-400 p-2 w-2/5 flex-none p-2">Dark Mode</h4>
-          <p className="text-center text-gray-600 mb-8 w-2/5 flex-none p-2">
-            Turn out the lights with our gorgeous dark mode support
-          </p>
-          <h4 className="text-gray-700 text-center bg-gray-400 p-2 w-2/5 flex-none p-2">Dark Mode</h4>
-          <p className=" text-center text-gray-600 mb-8 w-2/5 flex-none p-2 ">
-            Turn out the lights with our gorgeous dark mode support
-          </p>
-        </div>
-      </div>
+      {/* DarkMode needs to be reviewed */}
+      <section className="container mx-auto bg-white p-5 ">
+        <section className="container mx-auto bg-white p-5">
+          <div classname="container">
+            <div classname="row">
+              <div className="col-12">
+                <div classname="section-heading text-center">
+                  <h2 className="text-4xl flex justify-center font-sembold text-purple-600 ">
+                    Awesome Features
+                  </h2>
+                </div>
+                <div>
+                  {/* <h2 className="border-b-2 border-pink-500 w-2/12"></h2> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex justify-between text-center p-5" id="demo">
+            <div className="col-12 col-sm-6 col-lg-4">
+              <h4 className="p-2 font-sembold text-purple-500">
+                <img
+                  className="w-8 ml-32"
+                  src="https://i.ibb.co/XzktDZK/smartphone.png"
+                  alt="smartphone"
+                  border="0"
+                />
+                DarkMode
+              </h4>
+              <p className="mb-8 p-2 ">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div className="col-12 col-sm-6 col-lg-4">
+              <h4 className="p-2 font-sembold text-purple-500">
+                <img
+                  className="w-8 ml-32"
+                  src="https://i.ibb.co/XzktDZK/smartphone.png"
+                  alt="smartphone"
+                  border="0"
+                />
+                Dark Mode
+              </h4>
+              <p className="mb-8 p-2">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div className="col-12 col-sm-6 col-lg-4">
+              <h4 className="p-2 font-sembold text-purple-500">
+                <img
+                  className="w-8 ml-32"
+                  src="https://i.ibb.co/XzktDZK/smartphone.png"
+                  alt="smartphone"
+                  border="0"
+                />
+                Dark Mode
+              </h4>
+              <p className="text-start mb-8 p-2">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+            <div className="col-12 col-sm-6 col-lg-4">
+              <h4 className="p-2 font-sembold text-purple-500">
+                <img
+                  className="w-8 ml-32"
+                  src="https://i.ibb.co/XzktDZK/smartphone.png"
+                  alt="smartphone"
+                  border="0"
+                />
+                Dark Mode
+              </h4>
+              <p className="mb-8 p-2 ">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </section>
 
 		
 		  
@@ -210,7 +261,7 @@ import { useAuth0 } from '../react-auth0-spa';
             <div classname="row">
               <div className="col-12">
                 <div classname="section-heading text-center">
-                  <h2 className="text-4xl flex justify-center font-bold text-black-600 ">
+                  <h2 className="text-4xl flex justify-center font-sembold text-purple-600 ">
                     Our Team
                   </h2>
                 </div>
@@ -227,7 +278,7 @@ import { useAuth0 } from '../react-auth0-spa';
             <div className="justify-center md:flex bg-white rounded-lg p-6">
               <div className="flex-row">
                     <img
-                      className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                      className="md:w-48  mx-auto"
                       src="https://vignette.wikia.nocookie.net/berserk/images/6/6f/BTCG_Skull_Knight.png/revision/latest?cb=20170930084349"
                       alt=""
                     ></img>
@@ -247,7 +298,7 @@ import { useAuth0 } from '../react-auth0-spa';
                <div className="flex justify-between text-center p-5">
             <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48 mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/7/7b/Serpico_wind.jpg/revision/latest/window-crop/width/40/x-offset/0/y-offset/99/window-width/2032/window-height/1524?cb=20160828173038"
                     alt=""
                   ></img>
@@ -256,7 +307,7 @@ import { useAuth0 } from '../react-auth0-spa';
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48  mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/a/a9/Corkus_Manga.jpg/revision/latest?cb=20150810010522"
                     alt=""
                   ></img>
@@ -265,7 +316,7 @@ import { useAuth0 } from '../react-auth0-spa';
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48  mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/c/ca/Roderick_Manga.jpg/revision/latest/window-crop/width/40/x-offset/0/y-offset/24/window-width/410/window-height/308?cb=20150809233216"
                     alt=""
                   ></img>       
@@ -274,7 +325,7 @@ import { useAuth0 } from '../react-auth0-spa';
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48  mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/4/40/Manga_V38_Guts.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/19/window-width/400/window-height/300?cb=20170919104357"
                     alt=""
                   ></img>
@@ -289,11 +340,13 @@ import { useAuth0 } from '../react-auth0-spa';
 
 
 
-<section className="container mx-auto bg-white p-5">
+
+
+           <section className="container mx-auto bg-white p-5">
                <div className="flex justify-between text-center p-5">
             <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48 mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/7/7b/Serpico_wind.jpg/revision/latest/window-crop/width/40/x-offset/0/y-offset/99/window-width/2032/window-height/1524?cb=20160828173038"
                     alt=""
                   ></img>
@@ -302,7 +355,7 @@ import { useAuth0 } from '../react-auth0-spa';
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48  mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/a/a9/Corkus_Manga.jpg/revision/latest?cb=20150810010522"
                     alt=""
                   ></img>
@@ -311,7 +364,7 @@ import { useAuth0 } from '../react-auth0-spa';
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48  mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/c/ca/Roderick_Manga.jpg/revision/latest/window-crop/width/40/x-offset/0/y-offset/24/window-width/410/window-height/308?cb=20150809233216"
                     alt=""
                   ></img>       
@@ -320,23 +373,24 @@ import { useAuth0 } from '../react-auth0-spa';
                   </div>
                   <div className="col-12 col-sm-6 col-lg-4">
                   <img
-                    className="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0 md:mr-6"
+                    className="md:w-48  mx-auto"
                     src="https://vignette.wikia.nocookie.net/berserk/images/4/40/Manga_V38_Guts.png/revision/latest/window-crop/width/40/x-offset/0/y-offset/19/window-width/400/window-height/300?cb=20170919104357"
                     alt=""
                   ></img>
                   <h4 className="text-3xl text-gray-800 font-bold mb-3">Emily Arias</h4>
                   <p className="text-gray-600 mb-8">UX Desinger</p>
-				   </div>
-	          </div>
-	       </section>
-				
+                  </div>
+                  </div>
+           </section>
+     
+              
               </div>
             </div>
           </section>
         </section>
 
 
-{/* Review */}
+      {/* Review */}
       <div className="bg-gray-100">
         <div className="container mx-auto px-6 py-20">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
@@ -472,8 +526,7 @@ import { useAuth0 } from '../react-auth0-spa';
           </div>
         </nav>
       </section>
-			  </div>
+    </div>
+    
   );
 }
-
-
