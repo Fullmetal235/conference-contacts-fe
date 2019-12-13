@@ -350,6 +350,14 @@ export default function Landing() {
                     src="https://vignette.wikia.nocookie.net/berserk/images/7/7b/Serpico_wind.jpg/revision/latest/window-crop/width/40/x-offset/0/y-offset/99/window-width/2032/window-height/1524?cb=20160828173038"
                     alt=""
                   ></img>
+								  <div class="absolute top-0 left-0 w-full h-full bg-purple-500 opacity-0 transition-500 transition-all transition-ease transition-delay-0 ">
+<div class="team-social-icon">
+<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+<a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+</div>
+</div>
                   <h4 className="text-3xl text-gray-800 font-bold mb-3">Michael Redig</h4>
                   <p className="text-gray-600 mb-8">ISO Developer</p>
                   </div>
