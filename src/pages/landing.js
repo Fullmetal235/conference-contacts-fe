@@ -523,8 +523,11 @@ export default function Landing() {
                 </a>
               </ul>
             </div>
+            
           </div>
+          
         </nav>
+      </section>
       </section>
     </div>
     
