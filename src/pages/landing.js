@@ -201,7 +201,8 @@ import { useAuth0 } from '../react-auth0-spa';
             </div>
           </div>
         </section>
-			  
+		  </section>
+         
 {/* Team list */}
        <section className="container mx-auto bg-white p-5 ">
         <section className="container mx-auto bg-white p-5">
