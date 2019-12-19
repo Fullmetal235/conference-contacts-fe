@@ -132,7 +132,20 @@ const Home = () => {
           <p className="text-xl mr-16">Notifications</p>
           <p className="text-lg">view all</p>
         </div>
-        <p className="ml-4 mt-4 text-xl text-gray-500">New Messages</p>
+        {/* pending connection */}
+        <div>
+          <div>
+            <p className='ml-4 text-lg text-gray-600'>User Name</p>
+            <div className='flex justify-around my-6'>
+              <button className=' p-2 rounded-lg bg-purple-200 text-black'>Accept</button>
+              <button className='text-purple-500'>Ignore</button>
+              <button className='text-purple-500'>Block</button>
+            </div>
+          </div>
+          {/* notification of accepted request */}
+          <p className='ml-4 text-lg'>"name here" has accepted your request</p>
+        </div>
+        {/* <p className="ml-4 mt-4 text-xl text-gray-500">New Messages</p>
         <div className="flex flex-col items-center my-10">
           <svg
             width="90"
@@ -156,7 +169,7 @@ const Home = () => {
             <circle cx="63" cy="30" r="3" fill="#595959" />
           </svg>
           <p className="text-2xl mt-10 text-gray-500">You are all caught up!</p>
-        </div>
+        </div> */}
         <p className="ml-4 mt-24 text-xl text-gray-500">New Requests</p>
         <div className="flex flex-col items-center my-10">
           <svg
