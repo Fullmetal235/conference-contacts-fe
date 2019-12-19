@@ -1,11 +1,12 @@
 import React, { Fragment } from 'react';
 import { Router } from '@reach/router';
-
 import NavBar from '../containers/navbar';
 import Profile from './profile';
 import Settings from './settings';
-import Landing from './landing';
-const Home = () => <p>Home Page</p>;
+import Home from './home';
+import Landing from './landing'
+
+// const Home = () => <p>Home Page</p>;
 
 export default function Pages() {
   return (
