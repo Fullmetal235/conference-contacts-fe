@@ -78,14 +78,6 @@ const Home = () => {
             )}
           </span>
         </div>
-        {/* <div className="pt-24 pb-6 bg-gray-100">
-      <div className="main-container flex flex-col items-center py-4 bg-white mx-6 shadow-xl overflow-hidden">
-        <img
-          className="rounded-full shadow-md w-96 h-96 object-cover"
-          src={data.user.picture}
-          alt={`profile picuture of ${data.user.name}`}
-        />
-        <h1 className="text-3xl mt-6">{data.user.name}</h1> */}
       </div>
       <div className="flex justify-center my-10">
         <div className="purple rounded-full p-6">
@@ -115,38 +107,34 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      
+      {/* notifications */}
       <div className="profile-card bg-white w-11/12 pb-10 mx-auto">
         <div className="flex justify-between mx-4 pt-4 my-6">
-          <svg
-            width="23"
-            height="21"
-            viewBox="0 0 23 21"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M22.3263 4.97082C21.9776 4.16337 21.4748 3.43167 20.846 2.81667C20.2168 2.19984 19.4748 1.70965 18.6606 1.37276C17.8163 1.02204 16.9108 0.842522 15.9966 0.844627C14.7139 0.844627 13.4626 1.19585 12.3751 1.85927C12.1149 2.01797 11.8678 2.19228 11.6336 2.38219C11.3995 2.19228 11.1523 2.01797 10.8921 1.85927C9.80466 1.19585 8.55327 0.844627 7.27066 0.844627C6.34708 0.844627 5.45212 1.02154 4.60658 1.37276C3.78967 1.71097 3.05341 2.19748 2.42121 2.81667C1.7916 3.43097 1.28866 4.16285 0.940875 4.97082C0.579248 5.81115 0.394531 6.70352 0.394531 7.62189C0.394531 8.48824 0.571443 9.39101 0.922664 10.3094C1.21665 11.0769 1.63811 11.873 2.17665 12.6769C3.02999 13.9491 4.20333 15.2759 5.66025 16.621C8.07457 18.8506 10.4655 20.3907 10.5669 20.4532L11.1835 20.8486C11.4567 21.0229 11.8079 21.0229 12.0811 20.8486L12.6977 20.4532C12.7991 20.3881 15.1874 18.8506 17.6044 16.621C19.0613 15.2759 20.2346 13.9491 21.088 12.6769C21.6265 11.873 22.0506 11.0769 22.3419 10.3094C22.6932 9.39101 22.8701 8.48824 22.8701 7.62189C22.8727 6.70352 22.688 5.81115 22.3263 4.97082ZM11.6336 18.7907C11.6336 18.7907 2.37178 12.8564 2.37178 7.62189C2.37178 4.97082 4.56496 2.82187 7.27066 2.82187C9.17246 2.82187 10.8219 3.88334 11.6336 5.43392C12.4453 3.88334 14.0948 2.82187 15.9966 2.82187C18.7023 2.82187 20.8954 4.97082 20.8954 7.62189C20.8954 12.8564 11.6336 18.7907 11.6336 18.7907Z"
-              fill="black"
-            />
-          </svg>
-          <p className="text-xl mr-16">Notifications</p>
-          <p className="text-lg">view all</p>
+          <p className="text-2xl font-medium mr-16">Notifications</p>
         </div>
-        {/* pending connection */}
-        <div>
-          <div>
-            <p className='ml-4 text-lg text-gray-600'>User Name</p>
-            <div className='flex justify-around my-6'>
-              <button className=' p-2 rounded-lg bg-purple-200 text-black'>Accept</button>
-              <button className='text-purple-500'>Ignore</button>
-              <button className='text-purple-500'>Block</button>
+        <div className=''>
+            <p className="ml-2 mt-4 text-xl text-gray-500">Messages</p>
+            
+            {/* Message from user */}
+            <div className='flex flex-row justify-around items-center'>
+              <div className='rounded-full w-16 m-4'>
+                <img className='rounded-full' alt={data.user.name} src={data.user.picture} />
+              </div>
+              <div className='flex flex-col items-between mt-3 mr-2'>
+                <div className='flex justify-between mr-5'>
+                  <p className='text-lg font-medium'>{data.user.name}</p>
+                  <p className='text-sm text-gray-500'>1:53pm</p>
+                </div>
+                <div className=''>
+                  <p className='text-sm font-small'>Hey want to go to the movies later on tonight? </p>
+                </div>
+              </div>
             </div>
-          </div>
-          {/* notification of accepted request */}
-          <p className='ml-4 text-lg'>"name here" has accepted your request</p>
         </div>
-        {/* <p className="ml-4 mt-4 text-xl text-gray-500">New Messages</p>
-        <div className="flex flex-col items-center my-10">
+
+        {/* conditional illustration / email */}
+        {/* <div className="flex flex-col items-center my-10">
           <svg
             width="90"
             height="93"
@@ -170,8 +158,28 @@ const Home = () => {
           </svg>
           <p className="text-2xl mt-10 text-gray-500">You are all caught up!</p>
         </div> */}
-        <p className="ml-4 mt-24 text-xl text-gray-500">New Requests</p>
-        <div className="flex flex-col items-center my-10">
+
+        <p className="ml-4 mt-16 text-xl text-gray-500">New Requests</p>
+
+        {/* requests */}
+        <div className='flex flex-row items-start'>
+          <div className='rounded-full w-16 m-4'>
+            <img className='rounded-full' alt={data.user.name} src={data.user.picture} />
+          </div>
+            <div className='self-center'>
+              <p className='text-lg font-medium'>{data.user.name}</p>
+              <p className='text-sm'>wants to swaap</p>
+              {/* <p className='text-sm'>and you have swaaped</p> */}
+              {/* <p className='text-sm'>rejected</p> */}
+            </div>
+            <div className='self-center mx-auto'>
+              <button className='text-md mr-4'>Dismiss</button>
+              <button className='text-md'>Swaap</button>
+            </div>
+        </div>
+
+        {/* conditional illustration / qr dude */}
+        {/* <div className="flex flex-col items-center my-10">
           <svg
             width="124"
             height="95"
@@ -229,7 +237,7 @@ const Home = () => {
             </g>
           </svg>
           <p className="text-2xl mt-10 text-gray-500">Go out and meet more people!</p>
-        </div>
+        </div> */}
       </div>
 
       <div className="profile-card bg-white w-11/12 pb-10 mx-auto">
