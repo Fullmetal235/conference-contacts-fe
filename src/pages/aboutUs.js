@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function TeamPage() {
+export default function About() {
   return (
     <div>
       <section className="container mx-auto px-6 p-10" id="about">

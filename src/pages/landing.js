@@ -6,7 +6,7 @@ import Footer from './footer';
 import Features from './features';
 import Title from './title';
 import Review from './review';
-
+import About from './aboutUs';
 export default function Landing() {
   return (
     <div>
@@ -27,6 +27,8 @@ export default function Landing() {
 
       {/* Review */}
       <Review />
+      {/*about*/}
+      <About />
       {/* Team */}
       <Team />
 
