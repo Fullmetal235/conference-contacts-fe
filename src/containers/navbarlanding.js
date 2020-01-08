@@ -88,19 +88,7 @@ export default function NavBarLanding() {
               </li>
               <li>
                 <a
-<<<<<<< HEAD
-                  class="lg:p-12 py-3 px-0 flex justify-center  border-b-2 border-transparent hover:border-indigo-400 text-blue-600"
-                  href="#about"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  class="lg:p-12 py-3 px-0 flex justify-center  border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2 text-blue-600"
-=======
                   className="lg:p-12 py-3 px-0 flex justify-center  border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2 text-blue-600"
->>>>>>> b33887a813c36aecb5695d59715ae6c3e1aa41d0
                   href="#team"
                 >
                   Team

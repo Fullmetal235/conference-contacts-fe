@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -8488,32 +8488,6 @@ video {
   height: 22rem;
 }
 
-<<<<<<< HEAD
-.hover-photo:hover {
-  background-color: rgba(105,75,228,.8);
-  opacity: 0.8;
-}
-
-.icons {
-  position: absolute;
-  z-index: 5;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Vector */
-
-.github{
-  background: url(./icons/github.svg);
-}
-
-@media(max-width:700px){
-=======
 /* MAIN CONTAINER */
 
 .main-container {
@@ -8597,7 +8571,6 @@ video {
 /* ********* MEDIA QUERIES ********* */
 
 @media (max-width: 700px) {
->>>>>>> 11395feedacb29759571bb4050ceac813b317d0a
   .desktop-nav {
     display: none;
   }
@@ -39568,9 +39541,9 @@ video {
     z-index: auto;
   }
 }
-=======
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @import "./custom-utilities.css";
->>>>>>> 63539868ee02fda503a34baa48f1c8555de3a08c
+
