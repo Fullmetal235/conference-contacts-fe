@@ -9,7 +9,7 @@ import Review from './review';
 import About from './aboutUs';
 export default function Landing() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* LandpageNavBar */}
       <NavbarLanding />
 
@@ -20,7 +20,7 @@ export default function Landing() {
       <Features />
 
       {/* App Screenshots */}
-      <h2 className="text-4xl flex justify-center font-sembold text-black-600 p-12" id="demo">
+      <h2 className="text-4xl flex justify-center font-sembold text-black-600 pb-6" id="demo">
         App Screenshots
       </h2>
       <Screenshot />
